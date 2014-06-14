@@ -1,5 +1,5 @@
 {
-  "name": "redis-timed-disconnection",
+  "name": "redis-timed-disconnector",
   "description": "Get a redis connection and auto-terminate after X seconds. If you require a new connection, you will get the one active if present. If there is no active connection, a new one will be created. Very useful when digesting a huge queue",
   "version": "0.1.0",
   "maintainers": [
@@ -12,7 +12,7 @@
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/brugnara/redis-timed-disconnection"
+      "url": "https://github.com/brugnara/redis-timed-disconnector"
     }
   ],
   "dependencies": {
@@ -22,7 +22,7 @@
   "keywords": [
     "redis",
     "connection",
-    "disconnection",
+    "disconnector",
     "auto",
     "manager"
   ],
@@ -30,9 +30,9 @@
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/brugnara/redis-timed-disconnection"
+    "url": "https://github.com/brugnara/redis-timed-disconnector"
   },
   "bugs": {
-    "url": "https://github.com/brugnara/redis-timed-disconnection/issues"
+    "url": "https://github.com/brugnara/redis-timed-disconnector/issues"
   },
-  "homepage": "https://github.com/brugnara/redis-timed-disconnection"
+  "homepage": "https://github.com/brugnara/redis-timed-disconnector"

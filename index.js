@@ -16,10 +16,10 @@ RedisHelper.prototype.getClient = function(port, host) {
 };
 
 RedisHelper.prototype.startTimeout = function() {
-  console.info(LOG_CTX, 'Starting redis auto-close connection timeout');
+  console.info('Starting redis auto-close connection timeout...');
   clearTimeout(this.autoCloseTimeout);
   this.autoCloseTimeout = setTimeout(function() {
-    console.info(LOG_CTX, 'Redis connection closed due timeout (%d ms)', AUTO_CLOSE_CONNECTION);
+    console.info('Redis connection closed due timeout (%d ms)', AUTO_CLOSE_CONNECTION);
     this.client.end();
     this.client = null;
   }.bind(this), AUTO_CLOSE_CONNECTION);
